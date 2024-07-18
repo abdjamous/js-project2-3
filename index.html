@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS project 2-3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="top-nav">
+        <ul class="menu">
+          <li><a href="#section1">Slider 1</a></li>
+          <li><a href="#section1">Slider 2</a></li>
+          <li><a href="#section1">Slider 3</a></li>
+          <li><a href="#section1">Slider 4</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="div-btn">
+      <span class="menu-btn" id="btn" onclick="toggleNav()">&#9776;</span>
+    </div>
+    <aside id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()"
+        >&times;
+      </a>
+      <nav class="overlay-content">
+        <ul>
+          <li><a href="#slider1">Slider 1</a></li>
+          <li><a href="#slider2">Slider 2</a></li>
+          <li><a href="#slider3">Slider 3</a></li>
+          <li><a href="#slider4">Slider 4</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <section class="slider1">
+      <div class="sct1">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/swiber-slide1.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiber-slide2.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/swiber-slide3.webp" alt="" />
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <section class="slider2"></section>
+    <section class="slider3"></section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
