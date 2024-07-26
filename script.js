@@ -1,4 +1,45 @@
-const swiper = new Swiper(".swiper", {
+const swiper1 = new Swiper(".swiper1", {
+  // Optional parameters
+  loop: true,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+const swiper2 = new Swiper(".swiper2", {
+  // Optional parameters
+  loop: true,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+const swiper3 = new Swiper(".swiper3", {
   // Optional parameters
   loop: true,
 
